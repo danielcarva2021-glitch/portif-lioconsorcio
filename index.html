@@ -71,103 +71,11 @@ footer {
 </head>
 <body>
 
-<!-- 🎵 MÚSICA DE FUNDO -->
-<audio id="bg-music" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
-
-<header>
-  <div style="max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
-    <img src="consorcio-embracon.jpg" alt="Consórcio Embracon" style="max-width:200px;" />
-
-    <div style="text-align:center;flex:1;">
-      <strong>Unidade Santo André</strong><br>
-      <span style="font-size:13px;">Autorizada pelo BACEN</span>
-    </div>
-
-    <div style="display:flex;align-items:center;gap:14px;">
-      <div style="text-align:right;">
-        <strong>Alanne Lima</strong><br>
-        <span style="font-size:13px;">Consultora de Consórcios</span>
-      </div>
-      <img src="AMOR.jpeg" style="width:68px;height:68px;border-radius:50%;border:2px solid #fff;" />
-    </div>
-  </div>
-</header>
-
-<section>
-  <div class="card">
-    <h2>O que é Consórcio</h2>
-    <p>O consórcio é a forma <strong>inteligente e planejada</strong> de conquistar seu imóvel, veículo ou serviço <strong>sem pagar juros</strong>.</p>
-    <p>Regulamentado pelo <strong>Banco Central do Brasil (BACEN)</strong>, ele permite organizar sua compra com parcelas acessíveis e poder de compra à vista no momento certo.</p>
-    <p>Após a contemplação, o consorciado utiliza a carta de crédito e continua pagando as parcelas até o encerramento do grupo, conforme contrato.</p>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Por que escolher o Consórcio?</h2>
-    <ul>
-      <li>Sem cobrança de juros</li>
-      <li>Parcelas planejadas que cabem no orçamento</li>
-      <li>Organização financeira desde o início</li>
-      <li>Poder de compra à vista com a carta de crédito</li>
-      <li>Modalidade regulamentada pelo Banco Central</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Simulação de Consórcio</h2>
-    <p>A simulação é o primeiro passo para entender qual plano de consórcio combina com você.</p>
-    <p>De forma simples e rápida, você visualiza uma estimativa de valores, prazos e parcelas, sem compromisso.</p>
-    <a class="btn" href="https://wa.me/5511976141767" target="_blank">Quero fazer uma simulação</a>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Como funciona a Contemplação</h2>
-    <p>A contemplação é o momento em que o consorciado passa a ter acesso à <strong>carta de crédito</strong>.</p>
-    <p>Ela acontece durante as assembleias do grupo, por <strong>sorteio</strong> ou por <strong>lance</strong>, conforme regras contratuais.</p>
-    <p>Após a contemplação, o consorciado utiliza a carta e segue com o pagamento das parcelas até o final do plano.</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 – Alanne Lima | Embracon Santo André</p>
-  <p>Site seguro • HTTPS</p>
-</footer>
-
-<!-- 🔊 BOTÃO SOM -->
-<button id="soundToggle" style="position:fixed;bottom:100px;right:22px;width:52px;height:52px;border-radius:50%;border:none;background:#b91c1c;color:#fff;font-size:22px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:9999;">🔊</button>
-
-<!-- 📱 WHATSAPP -->
-<a href="https://wa.me/5511976141767" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;">
+0px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:34px;height:34px;" />
 </a>
 
-<script>
-const music = document.getElementById('bg-music');
-const toggleBtn = document.getElementById('soundToggle');
 
-music.volume = 0.2;
-
-document.addEventListener('click', () => {
-  if (music.paused) music.play();
-}, { once:true });
-
-toggleBtn.addEventListener('click', () => {
-  if (music.paused) {
-    music.play();
-    toggleBtn.textContent = '🔊';
-  } else {
-    music.pause();
-    toggleBtn.textContent = '🔇';
-  }
-});
-</script>
 
 </body>
 </html>
