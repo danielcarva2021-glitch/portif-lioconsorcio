@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Consultora de Consórcios – Embracon Santo André</title>
-  <meta name="description" content="Consultoria em consórcios de imóveis, veículos e serviços. Atendimento rápido e seguro." />
 
-<style>
+  <style>
 :root {
   --red-main:#b91c1c;
   --red-dark:#7f1d1d;
@@ -21,17 +20,17 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, var(--red-dark), var(--red-main), #000000);
-  color: var(--white);
+  background: linear-gradient(135deg, var(--red-dark), var(--red-main), #000);
+  color: #fff;
   padding: 40px 20px;
 }
 
 section {
-  padding: 32px 20px;
   max-width:1100px;
-  margin:32px auto;
   background:#ffffff;
-  border-radius:12px;
+  border-radius:10px;
+  margin:32px auto;
+  padding:24px;
 }
 
 .card {
@@ -41,14 +40,12 @@ section {
   box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
-h2 { font-size:28px; margin-top:0; }
-p, li { font-size:16px; line-height:1.7; }
-ul { padding-left:20px; }
+h2 { margin-top:0; }
 
 .btn {
   display:inline-block;
-  background: linear-gradient(135deg, var(--red-main), #000000);
-  color:#ffffff;
+  background: linear-gradient(135deg, var(--red-main), #000);
+  color:#fff;
   padding:16px 36px;
   border-radius:12px;
   text-decoration:none;
@@ -57,40 +54,51 @@ ul { padding-left:20px; }
 }
 
 footer {
-  background: linear-gradient(135deg, #000000, var(--red-dark));
+  background: linear-gradient(135deg, #000, var(--red-dark));
   color:#ffffff;
   text-align:center;
   padding:36px 20px;
   font-size:13px;
 }
 
-@media(max-width:768px){
-  h2{font-size:22px;}
+/* BOTÃO PLAY / PAUSE */
+#music-control {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #b91c1c, #000000);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+  z-index: 9999;
+  user-select: none;
 }
-</style>
+  </style>
 </head>
+
 <body>
 
-<!-- 🎵 MÚSICA DE FUNDO -->
-<audio id="bg-music" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
-
 <header>
-  <div style="max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
-    <img src="consorcio-embracon.jpg" alt="Consórcio Embracon" style="max-width:200px;" />
-
+  <div style="max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <img src="consorcio-embracon.jpg" alt="Consórcio Embracon" style="max-width:200px;">
     <div style="text-align:center;flex:1;">
       <strong>Unidade Santo André</strong><br>
       <span style="font-size:13px;">Autorizada pelo BACEN</span>
     </div>
-
-    <div style="display:flex;align-items:center;gap:14px;">
+    <div style="display:flex;align-items:center;gap:12px;">
       <div style="text-align:right;">
         <strong>Alanne Lima</strong><br>
-        <span style="font-size:13px;">Consultora de Consórcios</span>
+        <span style="font-size:13px;">23 anos • Consultora</span><br>
+        <span style="font-size:12px;">Atuando há 1 ano</span>
       </div>
-      <img src="AMOR.jpeg" style="width:68px;height:68px;border-radius:50%;border:2px solid #fff;" />
+      <img src="AMOR.jpeg" style="width:68px;height:68px;border-radius:50%;border:2px solid #fff;">
     </div>
   </div>
 </header>
@@ -98,18 +106,19 @@ footer {
 <section>
   <div class="card">
     <h2>O que é Consórcio?</h2>
-    <p>O consórcio é uma forma planejada e segura de adquirir bens ou serviços, regulamentado pelo Banco Central do Brasil.</p>
+    <p>O consórcio é uma forma planejada e sem juros de adquirir bens ou serviços, regulamentada pelo Banco Central do Brasil.</p>
+    <p>Mesmo após a contemplação, o pagamento das parcelas continua até o final do grupo.</p>
   </div>
 </section>
 
 <section>
   <div class="card">
-    <h2>Vantagens do Consórcio</h2>
+    <h2>Vantagens</h2>
     <ul>
       <li>Sem juros</li>
-      <li>Parcelas acessíveis</li>
-      <li>Poder de compra à vista</li>
-      <li>Modalidade regulamentada</li>
+      <li>Planejamento financeiro</li>
+      <li>Carta de crédito à vista</li>
+      <li>Segurança BACEN</li>
     </ul>
   </div>
 </section>
@@ -117,54 +126,59 @@ footer {
 <section>
   <div class="card">
     <h2>Simulação de Consórcio</h2>
-    <p>Simulação informativa e sem compromisso, conforme seu objetivo.</p>
-    <ul>
-      <li>Valor da carta de crédito</li>
-      <li>Prazo</li>
-      <li>Valor das parcelas</li>
-    </ul>
-    <a class="btn" href="https://wa.me/5511976141767" target="_blank">Quero fazer uma simulação</a>
+    <p>Simulação informativa e sem compromisso para entender valores e prazos.</p>
+    <a class="btn" href="https://wa.me/5511976141767" target="_blank">
+      Fazer Simulação no WhatsApp
+    </a>
   </div>
 </section>
 
 <section>
   <div class="card">
-    <h2>O que é Contemplação?</h2>
-    <p>A contemplação ocorre por sorteio ou lance durante as assembleias, permitindo acesso à carta de crédito.</p>
+    <h2>Contemplação</h2>
+    <p>A contemplação ocorre por sorteio ou lance, durante as assembleias do grupo.</p>
+    <p>Não existe promessa de data ou garantia de contemplação.</p>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 – Alanne Lima | Embracon Santo André</p>
-  <p>Site seguro • HTTPS</p>
+  <p>© 2025 – Alanne Lima | Consultora de Consórcios</p>
+  <p>Site Seguro • HTTPS</p>
 </footer>
 
-<!-- 🔊 BOTÃO SOM -->
-<button id="soundToggle" style="position:fixed;bottom:100px;right:22px;width:52px;height:52px;border-radius:50%;border:none;background:#b91c1c;color:#fff;font-size:22px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:9999;">🔊</button>
-
-<!-- 📱 WHATSAPP -->
-<a href="https://wa.me/5511976141767" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:34px;height:34px;" />
+<!-- WHATSAPP -->
+<a href="https://wa.me/5511976141767" target="_blank"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="34">
 </a>
 
+<!-- MÚSICA -->
+<audio id="bg-music" autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div id="music-control" onclick="toggleMusic()">⏸️</div>
+
 <script>
-const music = document.getElementById('bg-music');
-const toggleBtn = document.getElementById('soundToggle');
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("music-control");
 
 music.volume = 0.1;
 
-document.addEventListener('click', () => {
-  if (music.paused) music.play();
-}, { once:true });
-
-toggleBtn.addEventListener('click', () => {
+function toggleMusic() {
   if (music.paused) {
     music.play();
-    toggleBtn.textContent = '🔊';
+    btn.textContent = "⏸️";
   } else {
     music.pause();
-    toggleBtn.textContent = '🔇';
+    btn.textContent = "▶️";
   }
+}
+
+// autoplay após primeira interação
+document.addEventListener("click", function autoPlay() {
+  music.play().catch(()=>{});
+  document.removeEventListener("click", autoPlay);
 });
 </script>
 
