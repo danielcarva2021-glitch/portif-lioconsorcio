@@ -6,59 +6,100 @@
   <title>Consultora de Consórcios – Embracon Santo André</title>
   <meta name="description" content="Consultoraia em consórcios de imóveis, veículos e serviços. Atendimento rápido e seguro." />
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #b91c1c; color: #1f2937; }
-    header { background: #7f1d1d; color: #ffffff; padding: 32px 20px; border-bottom: 4px solid #ffffff; }
-    header img { max-width: 150px; width: 100%; height: auto; margin-bottom: 20px; }
-    header h1 { font-size: 26px; margin: 8px 0 4px; font-weight: 600; }
-    header p { margin: 4px 0; font-size: 15px; color: #374151; }
-
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-
-    .card { background: #ffffff; border-radius: 8px; padding: 24px; border: 1px solid #e5e7eb; box-shadow: none; }
-
-    .highlight { background: #b91c1c; color: #ffffff; }
-    .highlight h2 { font-size: 20px; margin-top: 0; color:#b91c1c; }
-
-    h2 { font-size: 22px; margin-top: 0; }
-    h3 { margin-bottom: 6px; }
-
-    p, li { font-size: 16px; line-height: 1.6; }
-    ul { padding-left: 18px; }
-
-    .btn { display: inline-block; background: #b91c1c; color: #ffffff; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 16px; }
-    .btn.primary { background: #b91c1c; color: #ffffff; }
-
-    footer { background: #7f1d1d; color: #ffffff; text-align: center; padding: 28px 18px; font-size: 13px; }
-
-    @media (max-width: 600px) {
-  header h1 { font-size: 22px; }
-  h2 { font-size: 20px; }
-  .btn { width: 100%; text-align: center; }
-
-  header > div {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  header img {
-    margin-bottom: 8px;
-  }
-
-  header div[style*="align-items:center"] {
-    justify-content: center;
-  }
-
-  header div[style*="text-align:right"] {
-    text-align: center !important;
-  }
+:root {
+  --red-main:#b91c1c;
+  --red-dark:#7f1d1d;
+  --black:#0f172a;
+  --white:#ffffff;
+  --gray:#f8fafc;
 }
-      h2 { font-size: 20px; }
-      .btn { width: 100%; text-align: center; }
-    }
-  </style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, var(--black), var(--red-dark));
+  color: #1f2937;
+}
+
+header {
+  background: linear-gradient(135deg, var(--red-dark), var(--red-main), #000000);
+  color: var(--white);
+  padding: 40px 20px;
+}
+
+section {
+  padding: 64px 20px;
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  border-radius:18px;
+  padding:36px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: var(--white);
+}
+
+.card.red {
+  background: linear-gradient(135deg, var(--red-main), var(--red-dark));
+  color: var(--white);
+}
+
+.card.red h2,
+.card.dark h2 {
+  color:#ffffff;
+}
+
+h2 {
+  font-size:28px;
+  margin-top:0;
+}
+
+p, li {
+  font-size:16px;
+  line-height:1.7;
+}
+
+ul { padding-left:20px; }
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:32px;
+}
+
+.btn {
+  display:inline-block;
+  background: linear-gradient(135deg, var(--red-main), #000000);
+  color:#ffffff;
+  padding:16px 36px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  margin-top:22px;
+}
+
+footer {
+  background: linear-gradient(135deg, #000000, var(--red-dark));
+  color:#ffffff;
+  text-align:center;
+  padding:36px 20px;
+  font-size:13px;
+}
+
+@media(max-width:768px){
+  h2{font-size:22px;}
+  section{padding:48px 16px;}
+}
+</style>
 </head>
 <body>
 
@@ -89,64 +130,57 @@
   </div>
 </header>
 
+<!-- O QUE É CONSÓRCIO -->
 <section style="max-width:1100px;background:#ffffff;border-radius:10px;margin:32px auto;padding:24px;">
   <div class="card">
     <h2>O que é Consórcio?</h2>
-    <p>O consórcio é uma forma <strong>planejada, segura e sem juros</strong> de adquirir bens ou serviços, como imóveis, veículos ou serviços diversos. Ele é regulamentado pelo <strong>Banco Central do Brasil (BACEN)</strong>, o que garante regras claras, transparência e segurança para os participantes.</p>
-
-    <p>No consórcio, pessoas com o mesmo objetivo formam um grupo e contribuem com parcelas mensais. A cada mês, durante as assembleias, um ou mais participantes são <strong>contemplados</strong> e passam a ter acesso à <strong>carta de crédito</strong>, que permite a aquisição do bem ou serviço desejado.</p>
-
-    <p>A contemplação ocorre de duas formas previstas em contrato:</p>
-    <ul>
-      <li><strong>Sorteio:</strong> realizado em assembleia, de forma transparente.</li>
-      <li><strong>Lance:</strong> possibilidade de antecipar a contemplação por meio de uma oferta de valor adicional, conforme regras do grupo.</li>
-    </ul>
-
-    <p>Após a contemplação, a carta de crédito oferece <strong>poder de compra à vista</strong>, possibilitando melhores negociações, sempre respeitando as condições contratuais.</p>
-
-    <p style="font-size:14px;color:#991b1b;"><strong>Importante:</strong> O consórcio não garante contemplação imediata. A contemplação depende exclusivamente de sorteio ou lance, conforme contrato.</p>
+    <p>O consórcio é uma forma <strong>planejada, segura e sem juros</strong> de adquirir bens ou serviços. Ele é regulamentado pelo <strong>Banco Central do Brasil (BACEN)</strong>, garantindo transparência e segurança aos participantes.</p>
+    <p>Pessoas com o mesmo objetivo formam um grupo e contribuem mensalmente. Todos os meses, durante as assembleias, ocorre a contemplação por <strong>sorteio</strong> ou <strong>lance</strong>.</p>
+    <p><strong>Continuidade de pagamento:</strong> mesmo após a contemplação e utilização da carta de crédito, o consorciado deve continuar pagando as parcelas até o encerramento do grupo, conforme contrato.</p>
   </div>
 </section>
 
+<!-- VANTAGENS -->
 <section style="max-width:1100px;background:#ffffff;border-radius:10px;margin:32px auto;padding:24px;">
   <div class="card">
     <h2>Vantagens do Consórcio</h2>
     <ul>
-      <li><strong>Sem juros:</strong> você paga apenas taxa de administração, conforme contrato.</li>
-      <li><strong>Planejamento financeiro:</strong> ideal para quem deseja se organizar para conquistar bens ou serviços.</li>
-      <li><strong>Parcelas acessíveis:</strong> valores que cabem no seu orçamento mensal.</li>
-      <li><strong>Flexibilidade de uso:</strong> utilize a carta de crédito para imóveis, veículos ou serviços.</li>
-      <li><strong>Regulamentado pelo BACEN:</strong> segurança e transparência garantidas por lei.</li>
-      <li><strong>Poder de compra à vista:</strong> após a contemplação, a carta permite negociação como pagamento à vista.</li>
+      <li>Não há cobrança de juros</li>
+      <li>Planejamento financeiro inteligente</li>
+      <li>Poder de compra à vista com a carta de crédito</li>
+      <li>Modalidade regulamentada pelo Banco Central</li>
+      <li>Parcelas que cabem no seu orçamento</li>
     </ul>
   </div>
 </section>
 
-<section style="max-width:1100px;background:#ffffff;border-radius:10px;margin:32px auto;padding:24px;">
-  <div class="card">
-    <h2>O que é Contemplação?</h2>
-    <p>A contemplação é o momento em que a pessoa consorciada tem acesso à carta de crédito. Ela ocorre exclusivamente por sorteio ou lance, conforme regras contratuais.</p>
-
-    <h3>Sorteio</h3>
-    <p>Os sorteios da Embracon acontecem em assembleias, utilizando os resultados da Loteria Federal.</p>
-
-    <h3>Lance</h3>
-    <p>O lance é uma forma de antecipar a contemplação por meio da oferta de um valor adicional, respeitando as regras do grupo.</p>
-
-    <p style="font-size:14px;color:#991b1b;"><strong>Importante:</strong> A Embracon não realiza promessas de contemplação. A contemplação depende exclusivamente de sorteio ou lance, conforme contrato.</p>
-  </div>
-</section>
-
+<!-- SIMULAÇÃO -->
 <section style="max-width:1100px;background:#ffffff;border-radius:10px;margin:32px auto;padding:24px;">
   <div class="card">
     <h2>Simulação de Consórcio</h2>
-    <p>Faça uma simulação sem compromisso e entenda qual plano melhor se encaixa no seu objetivo.</p>
+    <p>A simulação é <strong>informativa e sem compromisso</strong>. Ela apresenta uma estimativa de valores conforme o seu objetivo.</p>
     <ul>
-      <li>Imóveis, veículos e serviços</li>
-      <li>Condições conforme regulamento do grupo</li>
-      <li>Sem promessa de contemplação imediata</li>
+      <li>Valor da carta de crédito</li>
+      <li>Prazo de pagamento</li>
+      <li>Valor aproximado das parcelas</li>
     </ul>
+    <p><strong>Importante:</strong> A simulação não garante contemplação e não representa proposta contratual.</p>
     <a class="btn" href="https://wa.me/5511976141767" target="_blank">Quero fazer uma simulação</a>
+  </div>
+</section>
+
+<!-- CONTEMPLAÇÃO -->
+<section style="max-width:1100px;background:#ffffff;border-radius:10px;margin:32px auto;padding:24px;">
+  <div class="card">
+    <h2>O que é Contemplação?</h2>
+    <p>A contemplação é o momento em que o consorciado passa a ter acesso à <strong>carta de crédito</strong>, possibilitando a aquisição do bem ou serviço conforme as regras do contrato.</p>
+    <p>Ela ocorre exclusivamente durante as <strong>assembleias do grupo</strong> e pode acontecer de duas formas:</p>
+    <ul>
+      <li><strong>Sorteio:</strong> realizado de forma transparente, seguindo critérios definidos pela administradora.</li>
+      <li><strong>Lance:</strong> o consorciado pode ofertar um valor adicional para tentar antecipar a contemplação, respeitando as regras do grupo.</li>
+    </ul>
+    <p>Após a contemplação, o consorciado pode utilizar a carta de crédito para negociar o bem à vista, respeitando sempre as condições contratuais.</p>
+    <p><strong>Importante:</strong> A contemplação não é garantida e não ocorre em data pré-definida. Não existe promessa de contemplação, seja por sorteio ou por lance.</p>
   </div>
 </section>
 
